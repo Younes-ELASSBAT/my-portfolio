@@ -1,0 +1,45 @@
+/* Section principale */
+.about-section {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Titre */
+.about-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Carte */
+.about-card {
+    background-color: white;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+/* Texte */
+.about-text {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.about-text strong {
+    color:#4c837a;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .about-card {
+    padding: 15px;
+  }
+}
+

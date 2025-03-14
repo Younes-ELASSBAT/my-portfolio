@@ -1,0 +1,101 @@
+/* Section principale */
+.work-section {
+    background-color: #f8f9fa;
+    padding-top: 1%;
+    text-align: center;
+}
+
+/* Titre */
+.work-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Conteneur des cartes */
+.work-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Carte */
+.work-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 320px;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content is spaced evenly */
+}
+
+.work-card:hover {
+    transform: scale(1.05);
+}
+
+/* Image */
+.work-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Contenu */
+.work-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content is spaced evenly */
+    flex-grow: 1; /* Ensure content takes up available space */
+}
+
+.work-card-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.work-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Bouton */
+.work-button {
+    background-color:#d6f9ff;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+    display: inline-flex; /* Ensure buttons are in the same line */
+    align-items: center; /* Center icon vertically */
+    gap: 10px; /* Space between text and icon */
+    margin-top: auto; /* Push button to the bottom */
+    align-self: center; /* Center the button horizontally */
+}
+
+.work-button:hover {
+    background-color: #e3e3e3;
+}
+
+@media (max-width: 768px) {
+  .work-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .work-card {
+    width: 100%;
+  }
+}

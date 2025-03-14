@@ -1,0 +1,145 @@
+/* Base Styles */
+.skills-container {
+  text-align: center;
+  padding: 5px 20px;
+  background-color: #f8f9fa;
+}
+
+.skills-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #2d3748;
+}
+
+/* Soft Skills Styles */
+.soft-skills-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.soft-skill-card {
+  background: white;
+  padding: 25px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.soft-skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.soft-skill-image {
+  height: 100px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.skill-title {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.skill-title.green {
+  color: #38a169;
+}
+
+.skill-description {
+  color: #4a5568;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Technical Skills Styles */
+.technical-skills-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.skills-category {
+  margin-bottom: 50px;
+}
+
+.skills-category h3 {
+  font-size: 2rem;
+  color: #2d3748;
+  border-bottom: 3px solid #667eea;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 30px;
+}
+
+.technical-skills-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.technical-skill-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 140px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.technical-skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tech-skill-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.technical-skill-card p {
+  font-weight: 600;
+  color: #4a5568;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    padding: 10px;
+  }
+
+  .skills-container h2 {
+    font-size: 2rem;
+  }
+
+  .soft-skills-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .soft-skill-card {
+    width: 100%;
+  }
+
+  .technical-skills-section {
+    padding: 20px 0;
+  }
+
+  .skills-category h3 {
+    font-size: 1.5rem;
+  }
+
+  .technical-skills-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .technical-skill-card {
+    width: 100%;
+  }
+}
