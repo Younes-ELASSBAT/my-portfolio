@@ -10,27 +10,27 @@ export default function MyWork() {
     const projects = [
         {
             title: "Etud-manager",
-            description: "Etud-manager Application Desktop that manages Students made with Java Swing",
+            description: "Etud-manager Application Desktop that manages Students and notes and absences for students made with Java Swing",
             image: Etudmanager,
-            lien:"https://github.com/Younes-ELASSBAT"
+            lien:"https://github.com/Younes-ELASSBAT/Etud-manager"
         },
         {
             title: "E-commerce",  
             description:"Fullstack Website that manages purchase of office equipment online made with Laravel,Html,Css,Tailwind and MySQL for database management",
             image: Ecommerce,
-            lien:"https://github.com/Younes-ELASSBAT"
+            lien:"https://github.com/Younes-ELASSBAT/E-commerce"
         }, 
         {
             title: "Eventify",
             description: "Eventify Website that manages events made with React js and Html and Css  and Tailwind css",
             image: eventify,
-            lien:"https://github.com/Younes-ELASSBAT"
+            lien:"https://github.com/Younes-ELASSBAT/EVENTIFY"
         },
         {
             title: "Lawyer Magri",
             description: "Lawyer Magri Website that manages Cliens made with JavaScript and Html and Css and Tailwind css",
             image: LawyerMagri,
-            lien:"https://github.com/Younes-ELASSBAT"
+            lien:"https://github.com/Younes-ELASSBAT/Lawyer-Magri"
             
         }
     ];

@@ -1,8 +1,11 @@
 /* Section principale */
 .work-section {
     background-color: #f8f9fa;
-    padding-top: 1%;
+    padding-top: 10px;
     text-align: center;
+    max-width: 1700px;
+    margin:  auto;
+    overflow-x: hidden;
 }
 
 /* Titre */
@@ -18,7 +21,10 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
+    padding: 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Carte */
@@ -31,7 +37,7 @@
     transition: transform 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Ensure content is spaced evenly */
+    justify-content: space-between;
 }
 
 .work-card:hover {
@@ -50,8 +56,8 @@
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Ensure content is spaced evenly */
-    flex-grow: 1; /* Ensure content takes up available space */
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 .work-card-title {
@@ -65,6 +71,7 @@
     font-size: 14px;
     color: #666;
     margin-bottom: 15px;
+    line-height: 1.5;
 }
 
 /* Bouton */
@@ -78,24 +85,162 @@
     font-size: 16px;
     text-decoration: none;
     transition: background 0.3s ease-in-out;
-    display: inline-flex; /* Ensure buttons are in the same line */
-    align-items: center; /* Center icon vertically */
-    gap: 10px; /* Space between text and icon */
-    margin-top: auto; /* Push button to the bottom */
-    align-self: center; /* Center the button horizontally */
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto;
+    align-self: center;
 }
 
 .work-button:hover {
     background-color: #e3e3e3;
 }
 
-@media (max-width: 768px) {
-  .work-container {
-    flex-direction: column;
-    gap: 20px;
-  }
+@media (max-width: 1200px) {
+    .work-container {
+        gap: 25px;
+    }
 
-  .work-card {
-    width: 100%;
-  }
+    .work-card {
+        width: 300px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .work-section {
+        padding-top: 60px;
+    }
+
+    .work-container {
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .work-card {
+        width: 280px;
+    }
+
+    .work-title {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .work-section {
+        padding-top: 50px;
+    }
+
+    .work-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .work-container {
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .work-card {
+        width: calc(50% - 15px);
+        min-width: 250px;
+        max-width: 320px;
+    }
+
+    .work-image {
+        height: 160px;
+    }
+
+    .work-content {
+        padding: 15px;
+    }
+
+    .work-card-title {
+        font-size: 20px;
+    }
+
+    .work-description {
+        font-size: 13px;
+    }
+
+    .work-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .work-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .work-section {
+        padding-top: 40px;
+    }
+
+    .work-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .work-container {
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .work-image {
+        height: 140px;
+    }
+
+    .work-content {
+        padding: 12px;
+    }
+
+    .work-card-title {
+        font-size: 18px;
+    }
+
+    .work-description {
+        font-size: 12px;
+    }
+
+    .work-button {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 320px) {
+    .work-section {
+        padding-top: 30px;
+    }
+
+    .work-title {
+        font-size: 22px;
+    }
+
+    .work-card {
+        max-width: 100%;
+    }
+
+    .work-image {
+        height: 130px;
+    }
+
+    .work-card-title {
+        font-size: 16px;
+    }
+
+    .work-button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
 }

@@ -3,12 +3,16 @@
   text-align: center;
   padding: 5px 20px;
   background-color: #f8f9fa;
+  max-width: 1700px;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .skills-container h2 {
   font-size: 2.5rem;
   margin-bottom: 40px;
   color: #2d3748;
+  padding-top: 80px;
 }
 
 /* Soft Skills Styles */
@@ -108,6 +112,46 @@
   font-size: 1.1rem;
 }
 
+@media (max-width: 1200px) {
+  .skills-container h2 {
+    font-size: 2.3rem;
+    padding-top: 70px;
+  }
+
+  .soft-skill-card {
+    width: 260px;
+  }
+
+  .technical-skill-card {
+    width: 130px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .skills-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    padding-top: 60px;
+  }
+
+  .soft-skills-grid {
+    gap: 20px;
+  }
+
+  .soft-skill-card {
+    width: 240px;
+    padding: 20px;
+  }
+
+  .technical-skills-grid {
+    gap: 25px;
+  }
+
+  .technical-skill-card {
+    width: 120px;
+  }
+}
+
 @media (max-width: 768px) {
   .skills-container {
     padding: 10px;
@@ -115,15 +159,27 @@
 
   .skills-container h2 {
     font-size: 2rem;
+    margin-bottom: 25px;
+    padding-top: 50px;
   }
 
   .soft-skills-grid {
-    flex-direction: column;
     gap: 20px;
+    align-items: center;
   }
 
   .soft-skill-card {
-    width: 100%;
+    width: calc(50% - 20px);
+    max-width: 280px;
+    padding: 20px;
+  }
+
+  .soft-skill-image {
+    height: 80px;
+  }
+
+  .skill-title {
+    font-size: 1.2rem;
   }
 
   .technical-skills-section {
@@ -132,14 +188,112 @@
 
   .skills-category h3 {
     font-size: 1.5rem;
+    margin-bottom: 20px;
   }
 
   .technical-skills-grid {
-    flex-direction: column;
     gap: 20px;
+    padding: 0 10px;
   }
 
   .technical-skill-card {
-    width: 100%;
+    width: calc(33.33% - 20px);
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .soft-skills-grid {
+    flex-direction: column;
+  }
+
+  .soft-skill-card {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .technical-skill-card {
+    width: calc(50% - 15px);
+    min-width: 110px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-container h2 {
+    font-size: 1.8rem;
+    padding-top: 40px;
+  }
+
+  .soft-skill-card {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .soft-skill-image {
+    height: 70px;
+  }
+
+  .skill-title {
+    font-size: 1.1rem;
+  }
+
+  .skill-description {
+    font-size: 0.9rem;
+  }
+
+  .skills-category h3 {
+    font-size: 1.3rem;
+  }
+
+  .technical-skill-card {
+    width: calc(50% - 10px);
+    padding: 15px;
+    min-width: 90px;
+  }
+
+  .tech-skill-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .technical-skill-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .skills-container h2 {
+    font-size: 1.6rem;
+    padding-top: 35px;
+  }
+
+  .soft-skill-card {
+    padding: 12px;
+  }
+
+  .soft-skill-image {
+    height: 60px;
+  }
+
+  .skill-title {
+    font-size: 1rem;
+  }
+
+  .skill-description {
+    font-size: 0.8rem;
+  }
+
+  .technical-skill-card {
+    padding: 12px;
+    min-width: 80px;
+  }
+
+  .tech-skill-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .technical-skill-card p {
+    font-size: 0.8rem;
   }
 }

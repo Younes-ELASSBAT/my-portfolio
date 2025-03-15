@@ -8,16 +8,17 @@ import css from "../asset/css.png";
 import javascript from "../asset/javascript.jpg";
 import react from "../asset/react.png";
 import angular from "../asset/angular.png";
-import php from "../asset/php.png";
+import php from "../asset/php.svg";
 import laravel from "../asset/laravel.png";
 import nodejs from "../asset/nodejs.png";
 import java from "../asset/java.png";
 import javaSwing from "../asset/javaSwing.png";
-import jee from "../asset/jee.png";
+import jee from "../asset/J2ee.png";
 import jsp from "../asset/jsp.png";
+import express from "../asset/express.svg";
 import mysql from "../asset/mysql.png";
 import mongodb from "../asset/mongodb.png";
-import oracle from "../asset/oracle.png";
+
 import uml from "../asset/uml.png";
 import git from "../asset/git.png";
 import gitlab from "../asset/gitlab.png";
@@ -62,7 +63,8 @@ const technicalSkills = [
       { name: "Node.js", image: nodejs },
       { name: "Java", image: java },
       { name: "Java Swing", image: javaSwing },
-      { name: "Jee", image: jee },
+      { name: "Express.js", image: express },
+      { name: "J2ee", image: jee },
       { name: "Jsp", image: jsp },
     ],
   },
@@ -71,7 +73,6 @@ const technicalSkills = [
     skills: [
       { name: "MySQL", image: mysql },
       { name: "MongoDB", image: mongodb },
-      { name: "Oracle", image: oracle },
     ],
   },
   {

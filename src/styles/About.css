@@ -1,8 +1,11 @@
 /* Section principale */
 .about-section {
     background-color: #f9f9f9;
-    padding: 50px 20px;
+    padding: 80px 20px;
     text-align: center;
+    max-width: 1700px;
+    margin: 0 auto;
+    overflow-x: hidden;
 }
 
 /* Titre */
@@ -18,7 +21,7 @@
     background-color: white;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: left;
@@ -28,8 +31,12 @@
 .about-text {
     font-size: 16px;
     color: #444;
-    line-height: 1.6;
-    margin-bottom: 10px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.about-text:last-child {
+    margin-bottom: 0;
 }
 
 .about-text strong {
@@ -37,9 +44,98 @@
     font-weight: bold;
 }
 
+@media (max-width: 1200px) {
+    .about-section {
+        padding: 70px 15px;
+    }
+
+    .about-card {
+        max-width: 900px;
+        padding: 28px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-section {
+        padding: 60px 15px;
+    }
+
+    .about-title {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+
+    .about-card {
+        max-width: 800px;
+        padding: 25px;
+    }
+
+    .about-text {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 18px;
+    }
+}
+
 @media (max-width: 768px) {
-  .about-card {
-    padding: 15px;
-  }
+    .about-section {
+        padding: 50px 15px;
+    }
+
+    .about-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .about-card {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .about-text {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section {
+        padding: 40px 10px;
+    }
+
+    .about-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .about-card {
+        padding: 15px;
+    }
+
+    .about-text {
+        font-size: 13px;
+        line-height: 1.4;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .about-section {
+        padding: 30px 8px;
+    }
+
+    .about-title {
+        font-size: 20px;
+    }
+
+    .about-card {
+        padding: 12px;
+    }
+
+    .about-text {
+        font-size: 12px;
+        line-height: 1.3;
+    }
 }
 
