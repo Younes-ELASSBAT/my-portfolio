@@ -8,7 +8,7 @@ export default function Contact() {
             <h2 className="contact-title">Contact</h2>
             <div className="contact-card">
                 <form className="contact-form" action="https://formsubmit.co/youneselassbat@gmail.com" method="POST">
-                    <input type="hidden" name="_next" value="http://localhost:3000/" />
+                    <input type="hidden" name="_next" value="https://younes-el-assbat-my-portfolio.vercel.app/" />
                     <div className="input-group">
                         <FaUser className="icon" />
                         <input type="text" name="name" placeholder="Your name" required />
